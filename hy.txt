@@ -1,0 +1,18 @@
+Eval:
+(eval (read-str "(+ 1 1)"))
+
+Get last 2 chars:
+(cut x -2)
+
+Thread:
+(import threading)
+(threading.Thread 
+  :target callable
+  :args  (tuple [arglist]))
+
+Read file:
+(with [x (open "./file")] ...) ; ... = code
+
+Regexp:
+(import re)
+(re.match "pattern" "string")
